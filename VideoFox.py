@@ -22,7 +22,7 @@ def  completeSound():
 def installffmpeg():
     c()
     choice = ""
-    print("In order to install correctly, you will need to select which package manager you use. Type < to go back\n1. apt (Debian/Ubuntu)\n2. apt-get (Debian/Ubuntu)\n3. dnf (Fedora)\n4. yum (Fedora)\n5. pacman (Arch)")
+    print("In order to install correctly, you will need to select which package manager you use. Type < to go back\n1. apt (Debian/Ubuntu)\n2. apt-get (Debian/Ubuntu)\n3. dnf (Fedora)\n4. yum (Fedora)\n5. pacman (Arch)\n6. Portage (Gentoo)")
     choice = input(">")
     if choice == "<":
         return
@@ -51,6 +51,11 @@ def installffmpeg():
         completeSound()
         message()
         return
+    elif choice == "6"
+        sys("sudo emerge -a ffmpeg")
+        completeSound()
+        message()
+        return
     else:
         errorSound()
         message("Please choose a packagae manager from the list!")
@@ -75,7 +80,7 @@ def convertFPS():
     if outf == "<":
         return
     c()
-    print("Enter a fps value for the output video or type < to go back")
+    print("Enter a framerate for the output or type < to go back")
     fps = input(">")
     if fps == "<":
         return
