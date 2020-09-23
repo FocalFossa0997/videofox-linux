@@ -6,7 +6,7 @@ VideoFox has no gui, so you will have to launch it from the command line.Everyth
 - The executable has to be named VideoFox in order for the exit funstion to work  
 - The application cannot detect which linux distro you are on, so you will have to manually select the package manager that your system uses  
 # Forking and modifying
-If you want to fork and/or modyfy this, you can! Just make sure to credit me as the creator of the original release.  
+If you want to fork and/or modify this, you can! Just make sure to credit me as the creator of the original release.  
 # Can't get VideoFox to work?
 Feel free to share your problems if they are not listed here. Anyways, here are the most common errors that occur when trying to install / run
 
