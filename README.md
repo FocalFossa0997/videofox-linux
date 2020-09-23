@@ -15,3 +15,6 @@ Feel free to share your problems if they are not listed here. Anyways, here are 
 
 `sh: 1: ffmpeg: not found`
 > This occurs when you don't have ffmpeg installed. VideoFox can install it for you, just select it on the main menu.
+# Have any suggestions?
+Fell free to share your suggestions!
+
