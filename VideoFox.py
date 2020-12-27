@@ -51,7 +51,7 @@ def installffmpeg():
         completeSound()
         message()
         return
-    elif choice == "6"
+    elif choice == "6":
         sys("sudo emerge -a ffmpeg")
         completeSound()
         message()
