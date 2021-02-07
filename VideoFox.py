@@ -22,7 +22,7 @@ def  completeSound():
 def installffmpeg():
     c()
     choice = ""
-    print("In order to install correctly, you will need to select which package manager you use. Type < to go back\n1. apt (Debian/Ubuntu)\n2. apt-get (Debian/Ubuntu)\n3. dnf (Fedora)\n4. yum (Fedora)\n5. pacman (Arch)\n6. Portage (Gentoo)")
+    print("In order to install correctly, you will need to select which package manager you use. Type < to go back\n1. apt (Debian/Ubuntu)\n2. apt-get (Debian/Ubuntu)\n3. dnf (Fedora)\n4. yum (Fedora)\n5. pacman (Arch)\n6. Portage (Gentoo)\n7. eopkg (Solus)")
     choice = input(">")
     if choice == "<":
         return
@@ -56,6 +56,10 @@ def installffmpeg():
         completeSound()
         message()
         return
+    elif choice == "7":
+        sys("sudo eopkg install ffmpeg")
+        completeSound()
+        message()
     else:
         errorSound()
         message("Please choose a packagae manager from the list!")
@@ -246,7 +250,8 @@ def mainMenu():
         about()
     elif selection == "8":
         c()
-        sys("killall VideoFox")
+        print("Press ctrl + c to quit or press [Enter] to continue")
+        dummy = input(">")
     else:
         errorSound()
         message("Enter a valid command!")
